@@ -1,0 +1,18 @@
+/* Définition d'une variable CSS globale pour le padding du contenu */
+:host {
+  --content-padding: 10px; /* Définition d'une variable CSS pour le padding du contenu */
+}
+
+/* Styles pour l'en-tête (header) */
+header {
+  display: block; /* Affichage en tant que bloc */
+  height: 60px; /* Hauteur fixe de l'en-tête */
+  padding: var(--content-padding); /* Utilisation de la variable de padding définie globalement */
+  box-shadow: 0px 5px 25px var(--shadow-color); /* Ombre projetée en bas de l'en-tête */
+}
+
+/* Styles pour la classe .content */
+.content {
+  padding: var(--content-padding); /* Utilisation de la variable de padding définie globalement */
+}
+

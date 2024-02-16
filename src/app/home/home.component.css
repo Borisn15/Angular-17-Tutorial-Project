@@ -1,0 +1,45 @@
+/* Styles pour la section des résultats */
+.results {
+  display: grid; /* Utilisation du modèle de grille CSS */
+  column-gap: 14px; /* Espacement horizontal entre les éléments de la grille */
+  row-gap: 14px; /* Espacement vertical entre les éléments de la grille */
+  grid-template-columns: repeat(auto-fill, minmax(400px, 400px)); /* Définition des colonnes de la grille, avec une largeur minimale et maximale */
+  margin-top: 50px; /* Marge en haut de la section des résultats */
+  justify-content: space-around; /* Alignement horizontal des éléments de la grille */
+}
+
+/* Styles pour le champ de saisie de type texte */
+input[type="text"] {
+  border: solid 1px var(--primary-color); /* Bordure du champ de saisie */
+  padding: 10px; /* Espacement intérieur du champ de saisie */
+  border-radius: 8px; /* Bordure arrondie du champ de saisie */
+  margin-right: 4px; /* Marge à droite du champ de saisie */
+  display: inline-block; /* Affichage en ligne pour aligner avec le bouton */
+  width: 30%; /* Largeur initiale du champ de saisie */
+}
+
+/* Styles pour le bouton */
+button {
+  padding: 10px; /* Espacement intérieur du bouton */
+  border: solid 1px var(--primary-color); /* Bordure du bouton */
+  background: var(--primary-color); /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte du bouton */
+  border-radius: 8px; /* Bordure arrondie du bouton */
+}
+
+/* Media query pour les écrans de taille moyenne (entre 500px et 768px) */
+@media (min-width: 500px) and (max-width: 768px) {
+  .results {
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes pour les écrans de taille moyenne */
+  }
+  input[type="text"] {
+    width: 70%; /* Augmentation de la largeur du champ de saisie à 70% pour les écrans de taille moyenne */
+  }
+}
+
+/* Media query pour les petits écrans (moins de 499px) */
+@media (max-width: 499px) {
+  .results {
+    grid-template-columns: 1fr; /* Une seule colonne pour les petits écrans */
+  }
+}

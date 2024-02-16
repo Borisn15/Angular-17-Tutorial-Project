@@ -1,0 +1,86 @@
+/* Styling for the listing photo */
+.listing-photo {
+  height: 600px;
+  width: 50%;
+  object-fit: cover;  /* Maintain aspect ratio and cover the container */
+  border-radius: 30px;  /* Rounded corners */
+  float: right;  /* Float to the right side */
+}
+
+/* Styling for the heading of the listing */
+.listing-heading {
+  font-size: 48pt;  /* Font size */
+  font-weight: bold;  /* Bold text */
+  margin-bottom: 15px;  /* Bottom margin */
+}
+
+/* Styling for the location with a location pin icon */
+.listing-location::before {
+  content: url('/assets/location-pin.svg') / '';  /* Location pin icon before content */
+}
+
+.listing-location {
+  font-size: 24pt;  /* Font size */
+  margin-bottom: 15px;  /* Bottom margin */
+}
+
+/* Styling for the section heading within the features section */
+.listing-features > .section-heading {
+  color: var(--secondary-color);  /* Color from a variable (--secondary-color) */
+  font-size: 24pt;  /* Font size */
+  margin-bottom: 15px;  /* Bottom margin */
+}
+
+/* Styling for the features section */
+.listing-features {
+  margin-bottom: 20px;  /* Bottom margin */
+}
+
+/* Styling for list items within the features section */
+.listing-features li {
+  font-size: 14pt;  /* Font size */
+}
+
+/* Styling to remove list item bullets */
+li {
+  list-style-type: none;  /* No list item bullets */
+}
+
+/* Styling for the section heading within the apply section */
+.listing-apply .section-heading {
+  font-size: 18pt;  /* Font size */
+  margin-bottom: 15px;  /* Bottom margin */
+}
+
+/* Styling for labels and inputs */
+label, input {
+  display: block;  /* Display as block elements */
+}
+
+/* Styling for labels */
+label {
+  color: var(--secondary-color);  /* Color from a variable (--secondary-color) */
+  font-weight: bold;  /* Bold text */
+  text-transform: uppercase;  /* Uppercase text */
+  font-size: 12pt;  /* Font size */
+}
+
+/* Styling for inputs */
+input {
+  font-size: 16pt;  /* Font size */
+  margin-bottom: 15px;  /* Bottom margin */
+  padding: 10px;  /* Padding */
+  width: 400px;  /* Width */
+  border-top: none;  /* No top border */
+  border-right: none;  /* No right border */
+  border-left: none;  /* No left border */
+  border-bottom: solid .3px;  /* Bottom border with solid style */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 1024px) {
+  .listing-photo {
+      width: 100%;  /* Full width */
+      height: 400px;  /* Reduced height */
+  }
+}

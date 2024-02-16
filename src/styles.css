@@ -1,0 +1,27 @@
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the font family for the entire body */
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/* Define global color variables using CSS custom properties */
+:root {
+  --primary-color: #605DC8;     /* Main primary color */
+  --secondary-color: #8B89E6;   /* Secondary color */
+  --accent-color: #e8e7fa;      /* Accent color */
+  --shadow-color: #E8E8E8;      /* Shadow color */
+}
+
+/* Styling for primary button with the 'primary' class */
+button.primary {
+  padding: 10px;                   /* Padding inside the button */
+  border: solid 1px var(--primary-color);  /* Border with primary color */
+  background: var(--primary-color);       /* Background color */
+  color: white;                   /* Text color */
+  border-radius: 8px;             /* Border radius for rounded corners */
+}

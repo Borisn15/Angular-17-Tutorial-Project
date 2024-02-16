@@ -1,0 +1,43 @@
+/* Styles pour la section de liste d'éléments (listing) */
+.listing {
+    background: var(--accent-color); /* Couleur de fond pour la section de liste */
+    border-radius: 30px; /* Coins arrondis */
+    padding-bottom: 30px; /* Espacement en bas de la section de liste */
+}
+
+/* Styles pour l'en-tête de la liste */
+.listing-heading {
+    color: var(--primary-color); /* Couleur du texte de l'en-tête */
+    padding: 10px 20px 0 20px; /* Espacement du haut, droite, bas, gauche */
+}
+
+/* Styles pour la photo dans la liste */
+.listing-photo {
+    height: 250px; /* Hauteur fixe pour la photo */
+    width: 100%; /* Largeur de 100% pour remplir le conteneur parent */
+    object-fit: cover; /* Redimensionnement et recadrage de l'image pour couvrir la zone */
+    border-radius: 30px 30px 0 0; /* Coins arrondis uniquement en haut de la photo */
+}
+
+/* Styles pour l'emplacement dans la liste */
+.listing-location {
+    padding: 10px 20px 20px 20px; /* Espacement du haut, droite, bas, gauche */
+}
+
+/* Styles pour l'icône de localisation avant le texte de l'emplacement */
+.listing-location::before {
+    content: url("/assets/location-pin.svg")/""; /* Ajout d'une icône de localisation avant le texte */
+}
+
+/* Styles pour les liens dans la section de liste */
+section.listing a {
+    padding-left: 20px; /* Espacement à gauche des liens */
+    text-decoration: none; /* Suppression de la décoration de lien par défaut */
+    color: var(--primary-color); /* Couleur du texte des liens */
+}
+
+/* Styles pour l'élément après les liens dans la section de liste */
+section.listing a::after {
+    content: "\203A"; /* Ajout d'un caractère spécifique après les liens */
+    margin-left: 5px; /* Espacement à gauche du caractère spécifique */
+}
